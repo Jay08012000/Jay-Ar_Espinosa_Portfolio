@@ -14,6 +14,18 @@ useEffect(() => {
   localStorage.setItem('darkMode', darkMode)
 }, [darkMode])
 
+useEffect(() => {
+  const preventRightClick = (event) => {
+    event.preventDefault()
+  }
+
+  document.addEventListener('contextmenu', preventRightClick)
+
+  return () => {
+    document.removeEventListener('contextmenu', preventRightClick)
+  }
+}, [])
+
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeProject, setActiveProject] = useState(0)
 

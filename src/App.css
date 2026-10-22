@@ -357,7 +357,11 @@ p {
 /* Shared section headings */
 .section-heading {
   max-width: 720px;
-  margin: 0 auto 40px;
+  margin: 0 auto 16px;
+}
+
+.projects-section .section-heading {
+  margin-bottom: 16px;
 }
 
 .section-heading h2 {
@@ -369,8 +373,7 @@ p {
 .about-section {
   max-width: 800px;
   margin: 0 auto;
-  padding: 80px 48px;
-  border-top: 1px solid var(--border-color);
+  padding: 80px 48px 40px;
 }
 
 .about-section h2 {
@@ -381,16 +384,16 @@ p {
 
 /* Projects section */
 .projects-section {
-  padding: 80px 48px;
-  border-top: 1px solid var(--border-color);
+  padding: 48px 48px 80px;
+  scroll-margin-top: 0px;
 }
 
 .projects-carousel {
   position: relative;
   width: 100%;
   max-width: 900px;
-  height: 420px;
-  margin: 0 auto;
+  height: 360px;
+  margin: 0 auto ;
   overflow: hidden;
 }
 .carousel-controls {
@@ -435,8 +438,9 @@ p {
 
 .project-card {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
+  -webkit-tap-highlight-color: transparent;
   width: 240px;
   height: 320px;
   padding: 24px;
@@ -519,7 +523,6 @@ p {
 /* Skills section */
 .skills-section {
   padding: 80px 48px;
-  border-top: 1px solid var(--border-color);
 }
 
 .skills-grid {
@@ -560,7 +563,6 @@ p {
 /* Contact section */
 .contact-section {
   padding: 96px 48px;
-  border-top: 1px solid var(--border-color);
   text-align: center;
 }
 
@@ -581,7 +583,6 @@ p {
   align-items: center;
   gap: 16px;
   padding: 24px 48px;
-  border-top: 1px solid var(--border-color);
 }
 
 .site-footer p {

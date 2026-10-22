@@ -212,8 +212,9 @@ p {
 }
 
 .projects-section {
-  padding: 80px 48px;
+  padding: 48px 48px;
   border-top: 1px solid var(--border-color);
+  scroll-margin-top: 0;
 }
 
 .section-heading {
